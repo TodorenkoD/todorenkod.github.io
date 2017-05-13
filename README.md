@@ -8,4 +8,4 @@ https://todorenkod.github.io/
 * JS 2 https://todorenkod.github.io/JS/Homework/01-02/index2.html
 
 ### Homework JS 3-4: 
-* JS 3-4 https://todorenkod.github.io/JS/Homework/03-04/
+* JS 3-4 https://todorenkod.github.io/JS/Homework/03-04/index.html
