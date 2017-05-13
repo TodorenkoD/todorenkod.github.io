@@ -1,3 +1,5 @@
+'use scrict';
+
 function calcNumbers(x, n) {
             var result = x;
 
