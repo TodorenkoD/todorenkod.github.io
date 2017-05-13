@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Главная страница</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link href="CSS.css" rel="stylesheet" />
+	<link href="jquery-ui.css" rel="stylesheet" />
+    <!-- jQuery library (served from Google) -->
+    <script src="http://code.jquery.com/jquery-1.9.0.js"></script>
+	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <!-- bxSlider Javascript file -->
+    <script src="js/jquery.bxslider.min.js"></script>
+    <!-- bxSlider CSS file -->
+    <link href="js/jquery.bxslider.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500,300,100,100italic,300italic,400italic,500italic,700italic&subset=latin,greek,greek-ext,cyrillic-ext,cyrillic,latin-ext' rel='stylesheet' type='text/css'>
+	<script src="js/script.js"></script>
+	<script>
+        $(function () {
+            $('.bxslider').bxSlider({
+                auto: true,
+				adaptiveHeight: true,
+            });
+     
+				$( "#select" ).selectmenu();
+			});
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="inner">
+                <div class="logo">
+                    <a href="/">Layout</a></a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">html</a></li>
+                        <li><a href="#">css</a></li>
+                        <li><a href="#">javascript</a></li>
+                    </ul>
+                </nav>
+                <div class="login"><a href="#" class="enter">Enter</a></div>
+            </div>
+        </header><!-- .header-->
+        <div class="cl"></div>
+        <main class="content">
+            <div class="banner">
+                <ul class="bxslider">
+                    <li><img src="img/runner.jpg" />
+						<div class="text">
+							Monetize<br />
+							your skills now!
+							<div class="cl"></div>
+							<a href="#" class="btn">GO!</a>
+						</div>
+					</li>
+					<li><img src="img/runner.jpg" alt="" title="" /></li>
+                    <li><img src="img/runner.jpg" alt="" title="" /></li>
+                    <li><img src="img/runner.jpg" alt="" title="" /></li>
+                    <li><img src="img/runner.jpg" alt="" title="" /></li> 
+                </ul>
+            </div>
+            <div class="cl"></div>
+            <section>
+                <div class="inner">
+                    <div class="left">
+                        <h1>Something about you</h1>
+                        <p>
+                            In this section, you can specify any information about yourself, insert your photos, your interests and skills. It is also desirable to use tag canvas.<br />
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                        </p>
+                    </div>
+                    <div class="right">
+                        <img src="img/coockie.jpg" alt="" title="" />
+                    </div>
+                    <div class="cl"></div>
+                </div>
+
+				</section>
+            <section class="register">
+                <div class="inner">
+				
+				
+                    <div class="reg-form">
+                        <form action="" method="post">
+                            <label class="title">Register</label>
+                            <p><input type="text" name="" placeholder="Email"></p>
+                            <p><input type="text" name="" placeholder="Password"></p>
+                            <p>
+                                <select id="select" class="scrollbar">
+                                    <option selected value="Country 1">Country 1</option>
+                                    <option value="Country 2">Country 2</option>
+                                    <option value="Country 3">Country 3</option>
+                                    <option value="Country 4">Country 4</option>
+                                    <option value="Country 5">Country 5</option>
+                                    <option value="Country 6">Country 6</option>
+                                    <option value="Country 7">Country 7</option>
+                                    <option value="Country 8">Country 8</option>
+                                    <option value="Country 9">Country 9</option>
+                            </p>
+                            </select>
+                            <p><input type="submit" value="ENTER" class="btn"></p>
+                        </form>
+                    </div>
+                    <div class="cl"></div>
+                </div>
+            </section>
+        </main><!-- .content -->
+    </div><!-- .wrapper -->
+    <div class="cl"></div>
+    <footer>
+        <div class="inner">
+            <div class="copy">© 2015 layout</div>
+        </div>
+    </footer><!-- .footer -->
+</body>
+</html>

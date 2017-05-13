@@ -1,0 +1,487 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block;
+}
+
+input, button, textarea {
+    outline: none;
+}
+
+.cl {
+    clear: both;
+}
+
+
+body {
+    font: 300 15px Roboto;
+    width: 100%;
+    height: 100%;
+    color: #2c3e50;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+}
+
+
+
+/* Header
+        -----------------------------------------------------------------------------*/
+
+
+.header {
+    height: 45px;
+    background: #2c3e50;
+}
+
+    .header .inner {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+.logo {
+    margin-left: 10px;
+    float: left;
+    width: 140px;
+    height: 45px;
+    background: #fff;
+}
+
+    .logo a {
+        color: #27ae60;
+        text-decoration: none;
+        font: 700 26px Roboto;
+        text-align: center;
+        display: block;
+        text-transform: uppercase;
+        line-height: 45px;
+    }
+
+nav {
+    height: 45px;
+    float: left;
+	width: 50%;
+    text-align: center;
+}
+
+    nav ul {
+        list-style: none;
+        height: 45px;
+        padding-left: 210px;
+    }
+
+        nav ul li {
+            display: inline-block;
+        }
+
+            nav ul li a {
+                color: #fff;
+                font: 400 15px Roboto;
+                text-decoration: none;
+                line-height: 45px;
+                margin: 0 20px;
+                transition: .3s;
+            }
+
+                nav ul li a:hover {
+                    color: #ccc;
+                }
+
+
+
+
+.login {
+    float: right;
+    margin-right: 2%;
+}
+
+    .login a.enter {
+        font: 400 15px Roboto;
+        color: #fff;
+        background: #26ac5f;
+        border-radius: 3px;
+        text-decoration: none;
+        text-align: center;
+        padding: 3px;
+        width: 84px;
+        height: 29px;
+        display: block;
+        text-transform: uppercase;
+        line-height: 30px;
+        margin: 5px 0;
+        transition: .3s;
+    }
+
+        .login a.enter:hover {
+            background: #30CA71;
+        }
+
+
+.banner {
+    background: #eee;
+    margin: 0 auto;
+}
+
+
+.banner .bxslider li .text {
+    font: 100 55px Roboto;
+    position: absolute;
+    text-align: center;
+    right: 25%;
+    top: 20%;
+}
+.banner  .bxslider li a.btn{
+    font: 400 15px Roboto;
+    color: #fff;
+    background: #26ac5f;
+    border-radius: 3px;
+    text-decoration: none;
+    text-align: center;
+    padding: 3px;
+    width: 84px;
+    height: 29px;
+    display: block;
+    text-transform: uppercase;
+    line-height: 30px;
+    margin: 0 auto;
+    transition: .3s;
+}
+.banner  .bxslider li a.btn:hover {
+    background: #30CA71;
+}
+
+/* Middle
+        -----------------------------------------------------------------------------*/
+.content {
+    padding: 0 0 45px;
+    background: #fff;
+    margin: 0;
+    width: 100%;
+}
+
+    .content .inner {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 30px 0;
+    }
+
+    .content h1 {
+        font: 300 35px Roboto;
+        color: #2c3e50;
+        padding-bottom: 30px;
+    }
+
+    .content p {
+        font: 300 15px Roboto;
+        color: #2c3e50;
+        line-height: 25px;
+    }
+
+    .content .left {
+        float: left;
+        width: 50%;
+    }
+
+    .content .right {
+        float: right;
+        width: 50%;
+    }
+
+    .content img {
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+
+
+
+.register {
+    background: url(img/cutlery.png) 50% 0 no-repeat, linear-gradient(to right, #E5E5E5 0%, #F2F2F2 100%);
+}
+
+    .register .inner {
+                padding: 0;
+    }
+
+    .register .reg-form {
+        width: 460px;
+		height:360px;
+        margin: 0 auto;
+        padding: 80px 0;
+    }
+
+    .register form {
+        padding: 25px 80px;
+        margin: 0 auto;
+        background: #fff;
+        border-radius: 3px;
+        width: 300px;
+    }
+
+        .register form .title {
+            color: #555;
+            font: 100 35px Roboto;
+            text-align: center;
+            padding-bottom: 20px;
+			display: block;
+        }
+
+        .register form input {
+            font: 300 20px Roboto;
+            background: #f5f5f5;
+            border-radius: 3px;
+            padding: 10px;
+            height: 30px;
+            line-height: 30px;
+            border-top: 1px solid #c4c4c4 !important;
+            border: none;
+            margin-bottom: 5px;
+            color: #555;
+            width: 280px;
+        }
+
+        .register form select {
+            font: 300 20px Roboto;
+            background: #f5f5f5;
+            border-radius: 3px;
+            padding: 10px;
+            height: 50px;
+            line-height: 50px;
+            border-top: 1px solid #c4c4c4 !important;
+            border: none;
+            margin-bottom: 5px;
+            color: #555;
+            width: 100%;
+            outline: none;
+        }
+
+        .register form option {
+            padding: 5px;
+            color: #555;
+        }
+
+        .register form input.btn {
+            font: 400 20px Roboto;
+            color: #fff;
+            background: #26ac5f;
+            border-radius: 3px;
+            text-decoration: none;
+            text-align: center;
+            padding: 3px;
+            width: 120px;
+            height: 50px;
+            display: block;
+            text-transform: uppercase;
+            line-height: 30px;
+            border: none;
+            margin: 15px auto 0 auto;
+            cursor: pointer;
+            transition: .3s;
+        }
+
+            .register form input.btn:hover {
+                background: #30CA71;
+            }
+
+
+
+
+
+/* Footer
+        -----------------------------------------------------------------------------*/
+footer {
+    width: 100%;
+    height: 45px;
+    background: #2c3e50;
+    margin-top: -45px;
+}
+
+    footer .inner {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    footer .copy {
+        padding: 13px 0;
+        color: #fff;
+        font: 14px Roboto Light;
+        text-align: center;
+    }
+
+
+:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+:focus::-moz-placeholder {
+    color: transparent;
+}
+
+:focus:-moz-placeholder {
+    color: transparent;
+}
+
+:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+::-webkit-input-placeholder {
+    color: #555;
+}
+
+::-moz-placeholder {
+    color: #555;
+}
+/* Firefox 19+ */
+:-moz-placeholder {
+    color: #555;
+}
+/* Firefox 18- */
+:-ms-input-placeholder {
+    color: #555;
+}
+
+.bx-wrapper {
+    position: relative;
+    padding: 0;
+    width: 1350px;
+    margin: 0 auto;
+}
+@media screen and (min-width: 760px) and (max-width: 1280px) {
+	.banner .bxslider li .text {right: 20%;}
+	}
+@media screen and (min-width: 760px) and (max-width: 980px) {
+    .content .left, .content .right {
+        width: 48%;
+        padding: 2%;
+        float: left;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+	nav ul {
+		padding-left: 20%;
+		}
+		nav ul li a {margin:0 10px}
+	.banner .bxslider li .text {
+		font: 100 45px Roboto;
+		right: 15%;
+		top: 15%;
+}
+}
+
+@media screen and (max-width: 760px) {
+    .content .left, .content .right {
+        width: 96%;
+        padding: 4%;
+        float: none;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+
+
+nav ul {
+    padding-left: 0;
+    width: 100%;
+}
+
+            nav ul li a {
+                margin: 0 3%;
+            }
+
+    .register {
+        background-size: cover;
+    }
+	.banner .bxslider li .text {
+    font: 100 30px Roboto;
+    right: 20%;
+    top: 15%;
+}
+}
+
+@media screen and (max-width: 600px) {
+	.logo {margin:0;
+		width:110px;}
+		
+		.login a.enter{width:60px;}
+		.register form input {width:90%;}
+		
+			.register .reg-form  { width: 95%;
+							padding:10% 0;}
+			.register form {
+			padding: 5% 5%;
+			width: 90%;
+			box-sizing: border-box;
+			}
+			
+			.content h1 {
+    font: 300 24px Roboto;
+    padding-bottom: 20px;
+			}
+	.ui-selectmenu-button {width:95%!important}
+	.banner .bxslider li .text {font: 100 20px Roboto;}
+	.banner .bxslider li a.btn {
+		font: 400 15px Roboto;
+		width: 50px;
+		height: 20px;
+		line-height: 20px;
+	}
+
+}
+@media screen and (max-width: 500px)  {
+	.ui-selectmenu-button {width:100%!important}
+	.register form input {
+    width: 94%;
+}
+}
+
+@media screen and (max-width: 420px)  {
+	
+	nav{
+		width: 45%;}
+	
+	.register form input {width:92%;}
+	.banner .bxslider li .text {font: 100 16px Roboto; top: 10%;}
+	.banner .bxslider li a.btn {
+		font: 400 13px Roboto;
+		width: 50px;
+		height: 15px;
+		line-height: 15px;
+	}
+
+		.ui-menu-item{
+			padding: 10px!important;
+			border-bottom: 1px solid #ccc1!important;
+		}
+		.logo {width:80px;
+		}
+		.logo a{font:700 20px/45px Roboto;
+		}
+}
+		
+.ui-selectmenu-menu::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+
+.ui-selectmenu-menu::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+}
+
+.ui-selectmenu-menu::-webkit-scrollbar-thumb {
+    background-color: #000000;
+}
+
