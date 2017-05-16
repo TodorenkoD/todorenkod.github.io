@@ -3,12 +3,12 @@
 var arr = [];
 
 	for (var i = 0; i < 5; i++) {
-	    arr[i] = prompt('Введите любое имя');
+	    arr[i] = +prompt('Введите любое имя');
 	}
 
 	console.log(arr);
 
-var userName = prompt('Введите имя пользователя:');
+var userName = +prompt('Введите имя пользователя:');
 	console.log('Вас зовут ' + userName);
 
 for (var i = 0; i < 5; i++) {
