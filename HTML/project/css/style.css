@@ -209,7 +209,7 @@ nav {
 
 
 .register {
-    background: url(img/cutlery.png) 50% 0 no-repeat, linear-gradient(to right, #E5E5E5 0%, #F2F2F2 100%);
+    background: url(../img/cutlery.png) 50% 0 no-repeat, linear-gradient(to right, #E5E5E5 0%, #F2F2F2 100%);
 }
 
     .register .inner {
