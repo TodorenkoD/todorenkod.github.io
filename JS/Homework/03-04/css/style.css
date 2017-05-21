@@ -1,39 +1,43 @@
-* {	margin:0;
-	padding:0;
+.test-form {
+    width: 600px;
+    margin: 0 auto;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 15px;
 }
 
-body {
-	width: 100%;
-	height: 100%;
-}
-
-h1,h2 {
-	text-align: center;
-}
-
-form {
-	width: 50%;
-	margin: 20px auto;
-}
-
-input[type="checkbox"] {
-    float: left;
-    margin: 0px 10px 0 0;
-}
-
-.answer {
+h1 {
     display: block;
-    line-height: 14px;
-    font-size: 14px;
-    padding: 0 3px;
+    margin: 30px auto;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
 }
 
-input[type="submit"] {
-    width: 150px;
+.questions {
+    margin: 10px;
+    font-weight: bold;
+}
+.answers {
     display: block;
-    margin: 15px auto;
+    margin-left: 20px;
+}
+
+.test_block {
+    margin: 10px 0;
+}
+
+.btn {
+    display: block;
+    padding: 10px 15px;
+    margin: 30px auto;
+    background-color: #007c80;
+    color: #fff;
     border-radius: 5px;
-    padding: 10px;
+    cursor: pointer;
+    border: none;
     outline: none;
-	cursor:pointer;
+    font-size: 14px;
 }
+
+

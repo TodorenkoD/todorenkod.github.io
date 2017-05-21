@@ -1,83 +1,79 @@
-'use scrict';
+'use strict';
 
-var app = {
+var test = {
+    elements: {
+        wrapper: document.createElement('form'),
+        header: document.createElement('h1'),
+        headerText: document.createTextNode("Тест по программированию"),
+        container: document.createElement('div'),
+        btn: document.createElement('button'),
+        btnText: document.createTextNode("Проверить мои результаты")
+    },
 
-  createElement: function(params) {
-    var element = document.createElement(params.tagName);
+    questions: [
+        {
+        title: "Вопрос №1",
+        answers: ["Вариант ответа №1", "Вариант ответа №2", "Вариант ответа №3"]
+        },
+        {
+            title: "Вопрос №2",
+            answers: ["Вариант ответа №1", "Вариант ответа №2", "Вариант ответа №3"]
+        },
+        {
+            title: "Вопрос №3",
+            answers: ["Вариант ответа №1", "Вариант ответа №2", "Вариант ответа №3"]
+        }
+    ],
 
-    if (params.inputType){
-      element.setAttribute('type', params.inputType);
-    }
+    createElements: function() {
+        this.elements.wrapper.className = "test-form";
+        document.body.appendChild(this.elements.wrapper);
 
-    if (params.className){
-      element.className = params.className;
-    }
+        // this.elements.header.className = "header";
+        this.elements.wrapper.appendChild(this.elements.header);
+        this.elements.header.appendChild(this.elements.headerText);
 
-    if (params.content){
-      element.innerHTML = params.content;
-    }
+        this.elements.container.className = "test";
+        this.elements.wrapper.appendChild(this.elements.container);
+        this.elements.btn.className = "btn";
+        this.elements.btn.type = 'submit';
 
-    if (params.parentElement){
-      params.parentElement.appendChild(element);
-    }
+        this.elements.wrapper.appendChild(this.elements.btn);
+        this.elements.btn.appendChild(this.elements.btnText);
+    },
 
-    return element;
-  },
+    createTree: function() {
+        for (var j = 0, questionLength = this.questions.length; j < questionLength; j++) {
+            var questionFieldset = document.createElement('fieldset'),
+                question = document.createElement('legend');
 
-  generateQuestions: function(questionsAmount, answersAmount) {
+            question.innerHTML = (j + 1 + '. ' + this.questions[j].title);
+            question.className = "questions";
+            questionFieldset.className = "test_block";
 
-    for (var i = 0; i < questionsAmount; i++) {
+            this.elements.container.appendChild(questionFieldset);
+            questionFieldset.appendChild(question);
 
-      this.createElement({
-        tagName: 'h2',
-        content: 'Вопрос №' + (i + 1),
-        parentElement: form
-      });
+            for (var i = 0, answersLength = this.questions[j].answers.length; i < answersLength; i++ ) {
+                var label = document.createElement('label'),
+                    input = document.createElement('input'),
+                    answer = document.createTextNode(this.questions[j].answers[i]);
 
-      for (var j = 0; j < answersAmount; j++) {
+                label.className = "answers";
+                input.type = "checkbox";
+                label.appendChild(input);
+                label.appendChild(answer);
+                questionFieldset.appendChild(label);
+            }
+        }
+      },
 
-        var label = this.createElement({
-          tagName: 'label',
-          className: 'answer',
-          content: 'Вариант ответа №' + (j + 1),
-          parentElement: form
-        });
-
-        var checkbox = this.createElement({
-          tagName: 'input',
-          inputType: 'checkbox'
-        });
-
-       label.parentNode.insertBefore(checkbox, label);
+      createDocument: function() {
+        this.createElements();
+        this.createTree();
       }
+};
 
-    };
-
-  }
-
-}
+test.createDocument();
 
 
-
-var body = document.querySelector('body');
-
-
-app.createElement({
-  tagName: 'h1',
-  content: 'Тест по программированию',
-  parentElement: body
-});
-
-var form = app.createElement({
-  tagName: 'form',
-  parentElement: body
-});
-
-app.generateQuestions(3, 3);
-
-app.createElement({
-  tagName: 'input',
-  inputType: 'submit',
-  content: 'Проверить мои результаты',
-  parentElement: form
-});
