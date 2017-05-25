@@ -9,3 +9,6 @@ https://todorenkod.github.io/
 
 ### Homework JS 3-4: 
 * JS 3-4 [https://todorenkod.github.io/JS/Homework/03-04/index.html](https://todorenkod.github.io/JS/Homework/03-04/index.html)
+
+### Homework JS 5-6: 
+* JS 3-4 [https://todorenkod.github.io/JS/Homework/03-04/index.html](https://todorenkod.github.io/JS/Homework/05-06/index.html)
