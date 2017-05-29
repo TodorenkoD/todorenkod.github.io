@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+body {font-family: 'Indie Flower', cursive;}
+
+.tab {
+	width: 600px;
+	margin: 50px auto 0;
+}
+
+.tab__item {
+	display: inline-block;
+	margin-bottom: 0;
+	width: 100px;
+	height: 50px;
+	line-height: 50px;
+	color: #000;
+	text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+	outline:none;
+	border: 1px solid #000;
+    border-bottom: none;
+	background:#ececec;'
+	border-radius: 0;
+}
+
+.tab__item.active {
+	    padding-bottom: 1px;
+		background: #fff;
+		border-radius: 5px 5px 0 0;
+}
+
+
+.tab__content {
+    display: none;
+	padding: 20px 10px 20px;
+	background: #fff;
+	text-shadow: 0 0 1px #fff;
+	border: 1px solid #023515;
+	margin-top: -1px
+}
+
+.tab__content-show {
+    display: block;
+}
+
+.tab__header {
+	font-weight: bold;
+	color: #4e4e4e;
+	margin-bottom: 10px;
+}
+
+.tab__paragraph {
+	font-size: 0.85em;
+	
+}
+
+.form__block {
+	width: 200px;
+	margin: 0 auto;
+}
+ 
+.form__label {
+	display: inline-block;
+	width: 100px;
+	color: #0c3256;
+	font-size: 0.9em;
+}
+
+.form__question {
+	position: relative;
+	width: 280px;
+	margin: 30px auto;
+}
+
+.form__input {
+	background: #F4F4F4;
+	padding: 7px;
+	border: 1px solid #3e79fd;
+	border-radius: 5px;
+	outline: none;
+}
+
+
+
+.form__submit {
+    display: block;
+    background: #3e79fd;
+    color: #F4F4F4;
+    padding: 10px 15px;
+    border: 1px solid #2e2e2e;
+    border-radius: 5px;
+    float: left;
+    cursor: pointer;
+    outline: none;
+	transition:3s;
+}
+.form__submit:hover{background:#053ab3}
+
+.form__block .hint {
+	display: none;
+	position: absolute;
+	left: 200px;
+	width: 135px;
+	padding: 10px;
+	background: #e00202;
+	border-radius: 5px;
+	color: #fff;
+	opacity: 0.6;
+}

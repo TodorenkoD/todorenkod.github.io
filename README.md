@@ -12,3 +12,6 @@ https://todorenkod.github.io/
 
 ### Homework JS 5-6: 
 * JS 5-6 [https://todorenkod.github.io/JS/Homework/05-06/index.html](https://todorenkod.github.io/JS/Homework/05-06/index.html)
+
+### Homework JS 7-8: 
+* JS 7-8 [https://todorenkod.github.io/JS/Homework/07-08/index.html](https://todorenkod.github.io/JS/Homework/07-08/index.html)
