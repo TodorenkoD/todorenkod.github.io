@@ -108,3 +108,8 @@ body {font-family: 'Indie Flower', cursive;}
 	color: #fff;
 	opacity: 0.6;
 }
+input {
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+}
