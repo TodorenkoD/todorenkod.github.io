@@ -36,6 +36,6 @@ $("input").hover(function() {
 
 
 $( ".form__submit" ).click(function() {
-  $( ".hint" ).show( "slow" );
+  $( ".hint" ).toggle( "slow" );
 });
 
