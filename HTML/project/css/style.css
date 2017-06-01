@@ -15,6 +15,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 input, button, textarea {
     outline: none;
 }
+input[type=checkbox] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
 
 .clearfix {
     clear: both;
@@ -36,11 +40,6 @@ body {
     height: 100%;
 }
 
-input {
--webkit-appearance: none;
--moz-appearance: none;
-appearance: none;
-}
 
 /* Header
         -----------------------------------------------------------------------------*/
@@ -317,7 +316,7 @@ nav {
             color: #555;
         }
 
-        .register form input.btn {
+        .register form button.btn {
             font: 400 20px Roboto;
             color: #fff;
             background: #26ac5f;
@@ -336,7 +335,7 @@ nav {
             transition: .3s;
         }
 
-            .register form input.btn:hover {
+            .register form button.btn:hover {
                 background: #30CA71;
             }
 
