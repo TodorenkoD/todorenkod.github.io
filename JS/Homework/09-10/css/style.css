@@ -387,15 +387,15 @@ label {
 		line-height: 17px;
 		vertical-align: middle;
 	}
-		input[type=checkbox] + label:hover:after, label.checked:hover:after {
+		input[type=checkbox] + label:hover:after, label:hover:after {
 			box-shadow: 0 0 10px rgba(0,0,0,0.5);
 		}		
-	input[type=checkbox]:checked + label:after, label.checked:after  {
-			content: "\2714";
-			color: green;
-			display: inline-block;
-		}		
-			input[type=checkbox]:disabled + label:after, label.disabled:after{
+			input[type=checkbox]:checked + label:after, label.checked:after  {
+				content: "\2714";
+				color: green;
+				display: inline-block;
+			}		
+				input[type=checkbox]:disabled + label:after, label.disabled:after{
 					content: "\2718";
 					color: red;
 					cursor:not-allowed;
