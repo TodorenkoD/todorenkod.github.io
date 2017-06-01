@@ -17,4 +17,4 @@ https://todorenkod.github.io/
 * JS 7-8 [https://todorenkod.github.io/JS/Homework/07-08/index.html](https://todorenkod.github.io/JS/Homework/07-08/index.html)
 
 ### Homework JS 9-10: 
-* JS 9-10 [https://todorenkod.github.io/JS/Homework/09-10/index.html](https://todorenkod.github.io/JS/Homework/9-10/index.html)
+* JS 9-10 [https://todorenkod.github.io/JS/Homework/09-10/index.html](https://todorenkod.github.io/JS/Homework/09-10/index.html)
