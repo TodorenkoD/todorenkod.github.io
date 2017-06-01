@@ -16,7 +16,7 @@ input, button, textarea {
     outline: none;
 }
 
-.cl {
+.clearfix {
     clear: both;
 }
 
@@ -79,17 +79,26 @@ nav {
     float: left;
 	width: 50%;
     text-align: center;
+	position:relative;
+	z-index:999;
 }
 
     nav ul {
         list-style: none;
-        height: 45px;
         padding-left: 210px;
     }
 
         nav ul li {
             display: inline-block;
+			position:relative;
         }
+		
+		nav ul.sub-menu li {
+				border-bottom:1px solid #364b61;
+			}
+			nav ul.sub-menu li:hover {
+				background:#364b61;
+			}
 
             nav ul li a {
                 color: #fff;
@@ -103,7 +112,33 @@ nav {
                 nav ul li a:hover {
                     color: #ccc;
                 }
+				
+				nav ul li ul {
+					padding-left: 0;
+					position: absolute;
+					display: none;
+					min-width: 240px;
+					background: #2c3e50;
+					
+				}
 
+					nav ul li ul li{
+						background: #2c3e50;
+						text-align: left;
+						display: block;
+					}
+					
+					nav ul li ul li a{
+						line-height:15px;
+						display:block;
+						padding:10px;
+					}
+					
+					nav li li ul {
+						position:absolute;
+						top:0;
+						left:240px;
+					}
 
 
 
@@ -242,6 +277,11 @@ nav {
             padding-bottom: 20px;
 			display: block;
         }
+			.register form .title:after{
+			display:none;
+			}
+			.register form label{
+				cursor:default;}
 
         .register form input {
             font: 300 20px Roboto;
@@ -324,6 +364,42 @@ footer {
         font: 14px Roboto Light;
         text-align: center;
     }
+
+
+
+/* CSS for checkbox */
+
+
+label {
+    cursor: pointer;
+}
+	label:after, label.checked:after {
+		content: " ";
+		display: inline-block;
+		width: 17px;
+		height: 17px;
+		background: #ccc;
+		position: relative;
+		top:-2px;
+		margin-left: 15px;
+		border: 1px solid #000;
+		text-align: center;
+		line-height: 17px;
+		vertical-align: middle;
+	}
+		input[type=checkbox] + label:hover:after, label.checked:hover:after {
+			box-shadow: 0 0 10px rgba(0,0,0,0.5);
+		}		
+	input[type=checkbox]:checked + label:after, label.checked:after  {
+			content: "\2714";
+			color: green;
+			display: inline-block;
+		}		
+			input[type=checkbox]:disabled + label:after, label.disabled:after{
+					content: "\2718";
+					color: red;
+					cursor:not-allowed;
+				}
 
 
 :focus::-webkit-input-placeholder {

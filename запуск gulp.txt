@@ -1,5 +1,6 @@
 
 создаем папку, в ней папка public
+
 1) npm init
 2) npm install --save-dev gulp gulp-sass gulp-connect
 3) git init
@@ -9,7 +10,9 @@
 7) в public - css, images, html, js
 
 
-//var gulp = require('gulp');
+//
+
+var gulp = require('gulp');
 var sass = require ('gulp-sass');
 var connect = require ('gulp-connect');
 
@@ -40,7 +43,7 @@ gulp.task('default', ['sass', 'watch', 'connect']);
 
 
 
-Решение ошибки "CRLF would be replaced by LF in ..."
+ђешение ошибки "CRLF would be replaced by LF in ..."
 git config --global --unset core.autocrlf 
 git config core.autocrlf false
 

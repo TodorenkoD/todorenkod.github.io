@@ -340,30 +340,15 @@ background:#f5f5f5;
 	width: 14px;
 	height: 7px;
 }
-.ui-icon,
-.ui-widget-content .ui-icon {
-	background-image: url("../img/arrow.png");
-}
-.ui-widget-header .ui-icon {
-	background-image: url("../img/arrow.png");
-}
 .ui-state-default .ui-icon {
-	background-image: url("../img/arrow.png");
+    border-top: 7px solid #000;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: none;
+    height: auto;
+    width: auto;
 }
-.ui-state-hover .ui-icon,
-.ui-state-focus .ui-icon {
-	background-image: url("../img/arrow.png");
-}
-.ui-state-active .ui-icon {
-	background-image: url("../img/arrow.png");
-}
-.ui-state-highlight .ui-icon {
-	background-image: url("../img/arrow.png");
-}
-.ui-state-error .ui-icon,
-.ui-state-error-text .ui-icon {
-	background-image: url("../img/arrow.png");
-}
+
 
 /* positioning */
 .ui-icon-blank { background-position: 16px 16px; }
