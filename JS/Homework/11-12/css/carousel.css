@@ -1,0 +1,49 @@
+.carousel-hider {
+	width: 600px;
+	height: 200px;
+	overflow: hidden;
+	margin: 100px auto;
+	
+}
+.carousel-cover {
+	position: relative;
+	width: 800px;
+	margin: 0 auto;
+}
+.carousel-list {    
+    list-style: none;
+    width: 10000px;
+    position: relative;
+}
+.carousel-element {
+    display: block;
+    float: left;
+}
+.carousel-arrow-left, .carousel-arrow-right{
+	background:url(../img/arrow.png) 0 0 no-repeat;
+	position: absolute;
+	cursor: pointer;
+	top:35px;
+	width:130px;
+	height:130px;
+	transform:scale(0.5)
+}
+.carousel-arrow-right{
+    right: -20px;
+}
+.carousel-arrow-left{
+	left: -20px;
+        transform: rotate(180deg) scale(0.5);
+}
+.carousel-arrow-left:hover{
+	transform:rotate(180deg) scale(0.7);
+	transition:0.3s
+}
+.carousel-arrow-right:hover{
+	transform:scale(0.7);
+	transition:0.3s
+}
+.carousel-element img {
+    width: 300px;
+    height: 200px;
+}

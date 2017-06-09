@@ -1,0 +1,117 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block;
+}
+
+input, button, textarea {
+    outline: none;
+}
+
+
+.clearfix {
+    clear: both;
+}
+
+
+body {
+    font: 300 15px Roboto;
+    width: 100%;
+    height: 100%;
+    color: #2c3e50;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+}
+
+
+ /* contacts style */
+ 
+ .contacts {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.search-field {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.contacts-list {
+  padding: 0;
+  width: 100%;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  font-family: sans-serif;
+  width: 100%;
+  padding: 5px;
+  border-bottom: 1px dotted grey;
+}
+
+.contact-image {
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.contact-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.contact-number {
+  font-size: 18px;
+  color: grey;
+}
+
+/* end contact style  */
+
+
+:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+:focus::-moz-placeholder {
+    color: transparent;
+}
+
+:focus:-moz-placeholder {
+    color: transparent;
+}
+
+:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+::-webkit-input-placeholder {
+    color: #555;
+}
+
+::-moz-placeholder {
+    color: #555;
+}
+/* Firefox 19+ */
+:-moz-placeholder {
+    color: #555;
+}
+/* Firefox 18- */
+:-ms-input-placeholder {
+    color: #555;
+}
+
