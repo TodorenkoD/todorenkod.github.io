@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>HomeWork JS 13-14</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+</head>
+<body>
+    <div class="test-block">
+        <h2 class="text-center">Тест по математике</h2>
+        <form id="test">
+            <script type="text/template" id="template">
+                <% for (var i = 0; i < data.length; i++) { %>
+                <h3><%= data[i].title %></h3>
+                <div class="form-group">
+                    <label class="item-answer"><input type="checkbox" name="" id="question<%= i+1 %>answer1"><%= data[i].answers[0].answer %></label>
+                    <label class="item-answer"><input type="checkbox" name="" id="question<%= i+1 %>answer2"><%= data[i].answers[1].answer %></label>
+                    <label class="item-answer"><input type="checkbox" name="" id="question<%= i+1 %>answer3"><%= data[i].answers[2].answer %></label>
+                </div>
+                <% } %>
+            </script>
+          <button id="check-results">Проверить результаты!</button>
+        </form>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.0.0/lodash.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

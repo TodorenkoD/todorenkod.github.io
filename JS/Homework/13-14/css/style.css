@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f;);
+}
+
+
+.test-block{
+	width:400px;
+	margin: 50px auto;
+    box-shadow: 0 0 4px rgba(0,0,0,.2);
+    padding: 20px;
+	}
+	
+	.test-block:hover{
+		box-shadow: 0 0 9px rgba(0,0,0,.2);
+	}
+	
+.test-block h2 {
+	font-size:30px;
+	padding:20px 0; 
+	}
+.test-block h3 {
+	font-size:24px;
+	padding:10px 0; 
+	}
+.item-answer {
+	display:block;
+	padding:3px 0; 
+}
+
+	.text-center{
+		text-align:center;
+		}
+
+		
+
+input[type = checkbox] {
+    margin-right: 10px;
+	cursor:pointer;
+	position:relative;
+	top:2px;
+}
+input[type=checkbox]:disabled  {
+    cursor: not-allowed;
+}
+
+form a {
+    width: 140px;
+}
+
+
+
+
+/* Modal */
+.modal {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    top: 0;
+    left: 0;
+}
+
+.modal-inner {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 25%;
+    left: 25%;
+    background-color: white;
+    border: 2px solid grey;
+	    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+.modal-inner .text-center{
+	padding:10px;
+	font-size:20px;
+	position:relative;
+	top:30%;
+}
+.modal-inner .text-center p{
+	padding:10px 0; 
+	}
+	
+	
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top: -25%; opacity: 0} 
+    to {top: 0; opacity: 1}
+}
+
+@keyframes animatetop {
+    from {top: -25%; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+/* End Modal */
+
+
+/* button */
+
+ #check-results, .modal-inner button#exit {
+    color: #fff;
+    background: #26ac5f;
+    border-radius: 3px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    text-transform: uppercase;
+    margin: 15px auto;
+    transition: .3s;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+ .modal-inner button#exit{
+	position: absolute;
+    bottom: 0;
+    left: 45%;
+ }
+
+        #check-results:hover, .modal-inner button#exit:hover {
+            background: #30CA71;
+        }
+
+/* End button */
+		
+		
