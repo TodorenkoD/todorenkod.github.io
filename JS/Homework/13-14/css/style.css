@@ -9,7 +9,7 @@ body {
 
 
 .test-block{
-	width:400px;
+	max-width:400px;
 	margin: 50px auto;
     box-shadow: 0 0 4px rgba(0,0,0,.2);
     padding: 20px;
@@ -48,13 +48,6 @@ input[type=checkbox]:disabled  {
     cursor: not-allowed;
 }
 
-form a {
-    width: 140px;
-}
-
-
-
-
 /* Modal */
 .modal {
     position: fixed;
@@ -68,7 +61,6 @@ form a {
 .modal-inner {
     position: absolute;
     width: 50%;
-    height: 50%;
     top: 25%;
     left: 25%;
     background-color: white;
@@ -81,8 +73,11 @@ form a {
 .modal-inner .text-center{
 	padding:10px;
 	font-size:20px;
-	position:relative;
-	top:30%;
+}
+.modal-inner .footer-center{
+	position: relative;
+    height: 50px;
+    text-align: center;
 }
 .modal-inner .text-center p{
 	padding:10px 0; 
@@ -119,11 +114,6 @@ form a {
     cursor: pointer;
 }
 
- .modal-inner button#exit{
-	position: absolute;
-    bottom: 0;
-    left: 45%;
- }
 
         #check-results:hover, .modal-inner button#exit:hover {
             background: #30CA71;
@@ -131,4 +121,17 @@ form a {
 
 /* End button */
 		
+		
+@media all and (max-width: 500px) {
+	.test-block{
+	max-width:280px;
+	margin: 10px auto;
+    box-shadow: 0 0 4px rgba(0,0,0,.2);
+    padding: 10px;
+	}
+	
+	.modal-inner {
+    width: 90%;
+    left: 5%;
+}
 		

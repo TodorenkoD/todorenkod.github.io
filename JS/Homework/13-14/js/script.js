@@ -200,11 +200,11 @@ var checkResults = function(e) {
   if ( testOK ){
 
     modal = ('<div class="modal"><div class="modal-inner"><div class="text-center"><p>Поздравляем!!!</p><p>Вы прошли тест</p><p>Верных ответов '+
-     answered +' из '+ questionsQuantity +'</p></div><button id="exit">Закрыть</button></div></div>');
+     answered +' из '+ questionsQuantity +'</p></div><div class="footer-center"><button id="exit">Закрыть</button></div></div></div>');
   } else {
 
     modal = ('<div class="modal"><div class="modal-inner"><div class="text-center"><p>Вы не прошли тест ;(</p><p>Верных ответов '+
-     answered +' из '+ questionsQuantity +'</p></div><button id="exit">Закрыть</button></div></div>');
+     answered +' из '+ questionsQuantity +'</p></div><div class="footer-center"><button id="exit">Закрыть</button></div></div></div>');
   }
 
 
