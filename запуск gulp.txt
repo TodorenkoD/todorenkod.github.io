@@ -1,13 +1,13 @@
 
-создаем папку, в ней папка public
+СЃРѕР·РґР°РµРј РїР°РїРєСѓ, РІ РЅРµР№ РїР°РїРєР° public
 
 1) npm init
 2) npm install --save-dev gulp gulp-sass gulp-connect
 3) git init
-4) ./node_modules/.bin/gulp (если ошибка, пишем gulp sass )
-5) в корень файл gulpfile.js
-6) создаем папки \src\sass в них style.sass
-7) в public - css, images, html, js
+4) ./node_modules/.bin/gulp (РµСЃР»Рё РѕС€РёР±РєР°, РїРёС€РµРј gulp sass )
+5) РІ РєРѕСЂРµРЅСЊ С„Р°Р№Р» gulpfile.js
+6) СЃРѕР·РґР°РµРј РїР°РїРєРё \src\sass РІ РЅРёС… style.sass
+7) РІ public - css, images, html, js
 
 
 //
@@ -43,7 +43,7 @@ gulp.task('default', ['sass', 'watch', 'connect']);
 
 
 
-ђешение ошибки "CRLF would be replaced by LF in ..."
+С’РµС€РµРЅРёРµ РѕС€РёР±РєРё "CRLF would be replaced by LF in ..."
 git config --global --unset core.autocrlf 
 git config core.autocrlf false
 

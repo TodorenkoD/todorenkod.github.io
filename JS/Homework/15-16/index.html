@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HomeWork JS 15-16</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="logo">
+                <a href="#">
+                    <span>M</span>
+                    <span>y</span>
+                    <span>&nbsp;</span>
+                    <span>S</span>
+                    <span>e</span>
+                    <span>a</span>
+                    <span>r</span>
+                    <span>c</span>
+                    <span>h</span>
+                </a>
+            </div>
+            <div class="search-block">
+                    <form>
+                        <input type="search" class="search-input" name="custom-search">
+                    </form>
+                    <button class="search-button">search</button>
+            </div>
+        </header>
+        <main>
+            <div class="results-block">
+                <script type="text/template" id="tmpl">
+                    <% for (var prop in items) { %>
+                    <% var elem = items[prop]; %>
+                    <div class="result-item">
+                        <a href="<%=elem.link%>" target="blank"><%=elem.htmlTitle %></a>
+                        <p><%=elem.displayLink%></p>
+                        <p><%=elem.htmlSnippet%></p>
+                    </div>
+                    <% }; %>
+                </script>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.0.0/lodash.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

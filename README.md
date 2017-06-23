@@ -24,3 +24,6 @@ https://todorenkod.github.io/
 
 ### Homework JS 13-14: 
 * JS 13-14 [https://todorenkod.github.io/JS/Homework/13-14/index.html](https://todorenkod.github.io/JS/Homework/13-14/index.html)
+
+### Homework JS 15-16: 
+* JS 13-14 [https://todorenkod.github.io/JS/Homework/15-16/index.html](https://todorenkod.github.io/JS/Homework/15-16/index.html)
