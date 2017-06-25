@@ -20,7 +20,7 @@ $(function() {
 
     function getResult() {
         $resultBlock.empty();
-        var query = $('.search').val();
+        var query = $('.search-input').val();
         if (query === '') return;  
 
         $.ajax({
