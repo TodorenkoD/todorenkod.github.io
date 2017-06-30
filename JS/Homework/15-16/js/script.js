@@ -1,3 +1,5 @@
+'use strict;'
+
 $(function() {
     var tmpl = _.template($('#tmpl').html());
     var $resultBlock = $('.results-block');
