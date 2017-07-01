@@ -27,3 +27,9 @@ https://todorenkod.github.io/
 
 ### Homework JS 15-16: 
 * JS 15-16 [https://todorenkod.github.io/JS/Homework/15-16/index.html](https://todorenkod.github.io/JS/Homework/15-16/index.html)
+
+### Homework JS 17-18: 
+* JS 17-18 [https://todorenkod.github.io/JS/Homework/17-18/index.html](https://todorenkod.github.io/JS/Homework/17-18/index.html)
+
+
+
