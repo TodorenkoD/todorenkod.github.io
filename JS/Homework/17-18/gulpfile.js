@@ -80,7 +80,7 @@ gulp.task('bundleJs', function() {
     .pipe(babel({
       presets: ['env']
     }))
-    // .pipe(uglify())
+    .pipe(uglify())
     .pipe(gulp.dest(paths.dist.js))
     .pipe(browserSync.reload({
       stream: true
