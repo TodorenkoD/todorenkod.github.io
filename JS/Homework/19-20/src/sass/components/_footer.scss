@@ -1,0 +1,77 @@
+.footer {
+    background-color: $main-black;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__links {
+        padding: rem(60) 0 rem(90) 0;
+    }
+
+    &-nav {
+        flex: 1 1 0;
+        padding-right: rem(40);
+
+        &:last-child {
+            padding-right: 0;
+        }
+
+        &__header {
+            @include text($Ubuntu-medium, $white, 16);
+            padding-left: rem(5);
+            line-height: rem(24);
+            text-transform: uppercase;
+            margin-bottom: rem(48);
+        }
+
+        &__item {
+            display: flex;
+            align-items: center;
+            border-bottom: rem(1) solid rgba($white, .07);
+
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+
+        &__link {
+            @include text($Arial, rgba($white, .3), 13, 400);
+            padding: rem(10) rem(5);
+            text-decoration: none;
+
+            &:hover {
+                color: $blue;
+            }
+        }
+    }
+
+    &__contacts {
+        background-color: rgba($white, .05);
+
+        &-item {
+            padding: rem(20);
+            @include text($Arial, rgba($white, .2), 12, 400);
+            background-repeat: no-repeat;
+            background-position: 0 50%;
+            text-decoration: none;
+        }
+    }
+
+    &__address {
+        background-image: url(../img/location.svg);
+    }
+
+    &__tel {
+        background-image: url(../img/phone.svg);
+    }
+
+    &__email {
+        background-image: url(../img/email.svg);
+    }
+
+    &__copyright {
+        margin-left: auto;
+    }
+}

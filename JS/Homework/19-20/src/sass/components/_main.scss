@@ -1,0 +1,13 @@
+@import "../tools/_tools", "header", 'navigation', 'carousel', 'advantages', 'services', 'news-banner', 'logos', 'footer';
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: rem(35) 0;
+}
+
+.wrapper {
+    max-width: rem(1160);
+    margin: 0 auto;
+}

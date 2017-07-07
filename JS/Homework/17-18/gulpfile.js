@@ -21,14 +21,14 @@ var paths = {
     css: 'src/sass/**/*.scss',
     js: 'src/js/**/*.js',
     fonts: 'src/fonts/**/*.*',
-    img: 'src/img/**/*.+(png|jpg|gif|svg)'
+    img: 'src/images/**/*.+(png|jpg|gif|svg)'
   },
   dist: {
     html: 'dist',
     css: 'dist/css',
     js: 'dist/js',
     fonts: 'dist/fonts',
-    img: 'dist/img',
+    img: 'dist/images',
   },
   watch: {
     html: 'src/**/*.html'

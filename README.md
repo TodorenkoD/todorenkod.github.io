@@ -31,5 +31,9 @@ https://todorenkod.github.io/
 ### Homework JS 17-18: 
 * JS 17-18 [https://todorenkod.github.io/JS/Homework/17-18/dist/index.html](https://todorenkod.github.io/JS/Homework/17-18/dist/index.html)
 
+### Homework JS 19-20: 
+* JS Lodash [https://todorenkod.github.io/JS/Homework/19-20/lodash/index.html](https://todorenkod.github.io/JS/Homework/19-20/lodash/index.html)
+* JS Markup [https://todorenkod.github.io/JS/Homework/19-20/dist/index.html](https://todorenkod.github.io/JS/Homework/19-20/dist/index.html)
+
 
 

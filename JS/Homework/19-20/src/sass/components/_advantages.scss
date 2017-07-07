@@ -1,0 +1,66 @@
+.advantages {
+    display: flex;
+
+    &__item {
+        padding: rem(70) rem(40) rem(80) 0;
+    }
+
+    &__item:last-child {
+        padding-right: 0;
+    }
+}
+
+.advantage {
+    display: flex;
+    align-items: baseline;
+
+    &__number {
+        @include text($Ubuntu-medium, $main-black-10, 90);
+        margin-right: rem(35);
+    }
+
+    &__icon {
+        display: block;
+        width: rem(32);
+        height: rem(32);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+
+        &--settings {
+            background-image: url(../img/settings.svg);
+        }
+        &--tech {
+            background-image: url(../img/params.svg);
+        }
+        &--support {
+            background-image: url(../img/truck.svg);
+        }
+    }
+
+    &__header {
+        @include text($Ubuntu-medium, $main-black, 20);
+        margin-top: rem(19);
+        margin-bottom: rem(28);
+
+    }
+
+    &__text {
+        @include text($Arial, $grey-text, 13, 400);
+        height: rem(60);
+        margin-bottom: rem(25);
+        line-height: rem(20);
+        overflow: hidden;
+
+    }
+
+    &__read-next {
+        @include  text($Ubuntu-regular, $main-black, 13);
+        padding-right: rem(20);
+        text-decoration: none;
+        background: url(../img/arrow.svg) 100% 50% no-repeat;
+
+        &:hover {
+            color: $blue;
+        }
+    }
+}

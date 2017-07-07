@@ -1,0 +1,150 @@
+.news-adv {
+    background-color: $grey-bgc;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: rem(63) 0 rem(82) 0;
+    }
+
+    &__item {
+        flex: 1 1 0;
+    }
+}
+
+.news {
+    &__header {
+        @include text($Ubuntu-medium, $main-black, 24);
+        margin-bottom: rem(48);
+    }
+}
+
+.banners {
+    &__header {
+        @extend .news__header;
+    }
+}
+
+.article {
+    display: flex;
+    align-items: flex-start;
+
+    &:first-child {
+        padding-bottom: rem(30);
+    }
+
+    &__picture {
+        position: relative;
+    }
+
+    &__date {
+        display: flex;
+        flex-flow: column;
+        position: absolute;
+        top: rem(10);
+        left: rem(-18);
+    }
+
+    &__month, &__day {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: rem(40);
+        height: rem(40);
+    }
+
+    &__month {
+        @include text($Ubuntu-regular, $white, 15);
+        background-color: $blue;
+    }
+
+    &__day {
+        @include text($Ubuntu-regular, $main-black, 18);
+        background-color: $yellow;
+    }
+
+    &__content {
+        padding: rem(5) rem(35);
+        overflow: hidden;
+    }
+
+    &__header {
+        @include text($Ubuntu-medium, $main-black, 16);
+        display: block;
+        margin-bottom: rem(10);
+        cursor: pointer;
+
+        &:hover {
+            color: $blue;
+        }
+    }
+
+    &__info {
+        @include text($Arial, $grey-text, 13, 400);
+        margin-bottom: rem(25);
+
+        &-link {
+            color: $blue;
+            text-decoration: none;
+        }
+    }
+
+    &__text {
+        @include text($Arial, $grey-text, 13, 400);
+        max-height: rem(80);
+        line-height: rem(20);
+        overflow: hidden;
+    }
+}
+
+.accordion {
+
+    &__panel {
+        margin-bottom: rem(5);
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__header {
+        @include text($Ubuntu-regular, $main-black, 13);
+        display: flex;
+        text-transform: uppercase;
+        background-color: $white;
+        border: $border-grey;
+        cursor: pointer;
+
+        &--active {
+            color: $white;
+            background-color: $yellow;
+        }
+
+        &-icon {
+            width: rem(10);
+            padding: rem(13) rem(15);
+            padding-top: rem(11);
+            border-right: $border-grey;
+            font-size: rem(15);
+            text-align: center;
+        }
+
+        &-caption {
+            padding: rem(13);
+        }
+    }
+
+    &__content {
+        display: none;
+        padding: rem(30) rem(37);
+        max-height: rem(95);
+    }
+
+    &__content--visible {
+        display: block;
+    }
+
+
+    &__text {
+        @extend .article__text;
+    }
+}
+

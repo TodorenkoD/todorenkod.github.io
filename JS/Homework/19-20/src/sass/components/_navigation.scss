@@ -1,0 +1,59 @@
+.main-navigation {
+    display: flex;
+    justify-content: space-between;
+    background-color: $main-black;
+}
+
+.nav {
+    display: flex;
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-left: 1px solid rgba(21, 21, 21, .5);
+        border-right: 1px solid rgba(21, 21, 21, .5);
+    }
+
+    &__link {
+        @include text($Ubuntu-regular, $white, 14, 400);
+        padding: rem(23) rem(30);
+        text-decoration: none;
+        text-transform: uppercase;
+
+        &:active {
+            background-color: $blue;
+        }
+
+        &:hover {
+            color: $yellow;
+        }
+    }
+}
+
+.search {
+    position: relative;
+
+    &__input {
+        width: rem(241);
+        padding: rem(14);
+        margin: rem(8);
+        background-color: rgba(255, 255, 255, 0.05);
+        border: 1px solid #181a1d;
+        color: $white;
+        outline: none;
+    }
+
+    &__btn {
+        position: absolute;
+        top: 35%;
+        right: 8%;
+        width: rem(20);
+        height: rem(20);
+        background-color: transparent;
+        border-style: none;
+        background-image: url(../img/search.svg);
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+    }
+}

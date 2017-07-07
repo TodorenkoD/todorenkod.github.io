@@ -1,0 +1,47 @@
+.logo {
+    display: flex;
+    justify-content: center;
+    &__img {
+    }
+
+    &__part {
+        display: flex;
+        flex-direction: column;
+
+        &-1 {
+            @include text($Ubuntu-medium, #434343, 30);
+        }
+
+        &-2 {
+            @include text($Ubuntu-light, #333, 12, 300);
+            text-transform: uppercase;
+            letter-spacing: rem(3.5);
+        }
+    }
+
+}
+
+.social {
+
+    &__list {
+        display: flex;
+    }
+
+    &__link {
+        display: block;
+        width: rem(16);
+        height: rem(16);
+        margin-left: rem(15);
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+    }
+
+    &__svg {
+        fill: rgba($main-black, 0.2);
+
+        &:hover {
+            fill: $blue;
+        }
+    }
+}
+
