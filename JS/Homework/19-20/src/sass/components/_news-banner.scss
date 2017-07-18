@@ -1,150 +1,185 @@
-.news-adv {
+.news-adv
+{
     background-color: $grey-bgc;
-    &__wrapper {
+    &__wrapper
+    {
         display: flex;
-        justify-content: space-between;
-        padding: rem(63) 0 rem(82) 0;
-    }
 
-    &__item {
+        padding: rem(63) 0 rem(82) 0;
+
+        justify-content: space-between;
+    }
+    &__item
+    {
         flex: 1 1 0;
     }
 }
 
-.news {
-    &__header {
-        @include text($Ubuntu-medium, $main-black, 24);
+.news
+{
+    &__header
+    {
         margin-bottom: rem(48);
+
+        @include text($Ubuntu-medium, $main-black, 24);
     }
 }
 
-.banners {
-    &__header {
+.banners
+{
+    &__header
+    {
         @extend .news__header;
     }
 }
 
-.article {
+.article
+{
     display: flex;
-    align-items: flex-start;
 
-    &:first-child {
+    align-items: flex-start;
+    &:first-child
+    {
         padding-bottom: rem(30);
     }
-
-    &__picture {
+    &__picture
+    {
         position: relative;
     }
+    &__date
+{
+    position: absolute;
+    top: rem(10);
+    left: rem(-18);
 
-    &__date {
-        display: flex;
-        flex-flow: column;
-        position: absolute;
-        top: rem(10);
-        left: rem(-18);
-    }
+    display: flex;
 
-    &__month, &__day {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: rem(40);
-        height: rem(40);
-    }
+    flex-flow: column;
+}
+&__month,
+&__day
+{
+    display: flex;
 
-    &__month {
-        @include text($Ubuntu-regular, $white, 15);
+    width: rem(40);
+    height: rem(40);
+
+    justify-content: center;
+    align-items: center;
+}
+
+    &__month
+    {
         background-color: $blue;
-    }
 
-    &__day {
-        @include text($Ubuntu-regular, $main-black, 18);
+        @include text($Ubuntu-regular, $white, 15);
+    }
+    &__day
+    {
         background-color: $yellow;
-    }
 
-    &__content {
-        padding: rem(5) rem(35);
+        @include text($Ubuntu-regular, $main-black, 18);
+    }
+    &__content
+    {
         overflow: hidden;
-    }
 
-    &__header {
-        @include text($Ubuntu-medium, $main-black, 16);
+        padding: rem(5) rem(35);
+    }
+    &__header
+    {
         display: block;
+
         margin-bottom: rem(10);
+
         cursor: pointer;
 
-        &:hover {
+        @include text($Ubuntu-medium, $main-black, 16);
+        &:hover
+        {
             color: $blue;
         }
     }
-
-    &__info {
-        @include text($Arial, $grey-text, 13, 400);
+    &__info
+    {
         margin-bottom: rem(25);
 
-        &-link {
-            color: $blue;
+        @include text($Arial, $grey-text, 13, 400);
+        &-link
+        {
             text-decoration: none;
+
+            color: $blue;
         }
     }
-
-    &__text {
-        @include text($Arial, $grey-text, 13, 400);
-        max-height: rem(80);
+    &__text
+    {
         line-height: rem(20);
+
         overflow: hidden;
+
+        max-height: rem(80);
+
+        @include text($Arial, $grey-text, 13, 400);
     }
 }
 
-.accordion {
-
-    &__panel {
+.accordion
+{
+    &__panel
+    {
         margin-bottom: rem(5);
-        &:last-child {
+        &:last-child
+        {
             margin-bottom: 0;
         }
     }
-
-    &__header {
-        @include text($Ubuntu-regular, $main-black, 13);
+    &__header
+    {
         display: flex;
-        text-transform: uppercase;
-        background-color: $white;
-        border: $border-grey;
-        cursor: pointer;
 
-        &--active {
+        cursor: pointer;
+        text-transform: uppercase;
+
+        border: $border-grey;
+        background-color: $white;
+
+        @include text($Ubuntu-regular, $main-black, 13);
+        &--active
+        {
             color: $white;
             background-color: $yellow;
         }
+        &-icon
+        {
+            font-size: rem(15);
 
-        &-icon {
             width: rem(10);
             padding: rem(13) rem(15);
             padding-top: rem(11);
-            border-right: $border-grey;
-            font-size: rem(15);
-            text-align: center;
-        }
 
-        &-caption {
+            text-align: center;
+
+            border-right: $border-grey;
+        }
+        &-caption
+        {
             padding: rem(13);
         }
     }
-
-    &__content {
+    &__content
+    {
         display: none;
-        padding: rem(30) rem(37);
-        max-height: rem(95);
-    }
 
-    &__content--visible {
+        max-height: rem(95);
+        padding: rem(30) rem(37);
+    }
+    &__content--visible
+    {
         display: block;
     }
-
-
-    &__text {
+    &__text
+    {
         @extend .article__text;
     }
 }
-

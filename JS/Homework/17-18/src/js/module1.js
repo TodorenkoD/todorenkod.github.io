@@ -1,2 +1,3 @@
-
-  var c = 9;
+(function() {
+	var c = 9;
+}());

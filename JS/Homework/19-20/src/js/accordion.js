@@ -1,12 +1,12 @@
 {
-    const collapse = function () {
+    const collapse = function() {
 
         let classActive = this.classList.contains('accordion__header--active');
         let icon = this.firstElementChild;
         let content = this.nextElementSibling;
         let parent = this.parentElement.parentElement.children;
 
-        if(!classActive) {
+        if (!classActive) {
             for (let i = 0, len = parent.length; i < len; i++) {
                 let item = parent[i].firstElementChild;
                 item.classList.remove('accordion__header--active');

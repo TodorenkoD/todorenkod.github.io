@@ -1,80 +1,98 @@
-.services {
+.services
+{
     padding: rem(45) 0;
+
     background-color: $main-black;
-
-    &__header {
-        @include text($Ubuntu-medium, $white, 24);
+    &__header
+    {
         margin: 0 auto;
-    }
 
-    &__links {
+        @include text($Ubuntu-medium, $white, 24);
+    }
+    &__links
+    {
         display: flex;
         flex-direction: row;
+
         justify-content: space-between;
     }
-
-    &__item {
+    &__item
+    {
         padding: rem(37) rem(18);
-        text-align: center;
 
-        &:first-child {
+        text-align: center;
+        &:first-child
+        {
             padding-left: 0;
         }
-
-        &:last-child {
+        &:last-child
+        {
             padding-right: 0;
         }
     }
 }
 
-.service {
-
-    &__wrapper {
+.service
+{
+    &__wrapper
+    {
         position: relative;
+
         display: flex;
+
         justify-content: center;
         align-items: center;
-
-        &:before {
-            display: none;
-            content: '';
+        &:before
+        {
             position: absolute;
+            z-index: 100;
+
+            display: none;
+
             width: 100%;
             height: 100%;
-            z-index: 100;
+
+            content: '';
+
             background-color: rgba($blue, .7);
         }
-
-        &:after {
-            display: none;
-            content: '+';
-            position: absolute;
-            color: $white;
+        &:after
+        {
             font-size: rem(50);
+
+            position: absolute;
             z-index: 100;
+
+            display: none;
+
+            content: '+';
+
+            color: $white;
         }
     }
-
-    &__image {
+    &__image
+    {
         width: 100%;
     }
-
-    &__link {
-        text-decoration: none;
+    &__link
+    {
         position: relative;
 
-        &:hover .service__header {
+        text-decoration: none;
+        &:hover .service__header
+        {
             color: $yellow;
         }
-
         &:hover .service__wrapper:before,
-        &:hover .service__wrapper:after {
+        &:hover .service__wrapper:after
+        {
             display: block;
         }
     }
-
-    &__header {
-        @include text($Ubuntu-medium, $white, 16);
+    &__header
+    {
         margin-top: rem(30);
+
+        @include text($Ubuntu-medium, $white, 16);
     }
 }

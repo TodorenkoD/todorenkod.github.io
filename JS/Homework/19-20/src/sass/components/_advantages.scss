@@ -1,65 +1,78 @@
-.advantages {
+.advantages
+{
     display: flex;
-
-    &__item {
+    &__item
+    {
         padding: rem(70) rem(40) rem(80) 0;
     }
-
-    &__item:last-child {
+    &__item:last-child
+    {
         padding-right: 0;
     }
 }
 
-.advantage {
+.advantage
+{
     display: flex;
+
     align-items: baseline;
-
-    &__number {
-        @include text($Ubuntu-medium, $main-black-10, 90);
+    &__number
+    {
         margin-right: rem(35);
-    }
 
-    &__icon {
+        @include text($Ubuntu-medium, $main-black-10, 90);
+    }
+    &__icon
+    {
         display: block;
+
         width: rem(32);
         height: rem(32);
+
         background-repeat: no-repeat;
         background-position: 50% 50%;
-
-        &--settings {
+        &--settings
+        {
             background-image: url(../img/settings.svg);
         }
-        &--tech {
+        &--tech
+        {
             background-image: url(../img/params.svg);
         }
-        &--support {
+        &--support
+        {
             background-image: url(../img/truck.svg);
         }
     }
-
-    &__header {
-        @include text($Ubuntu-medium, $main-black, 20);
+    &__header
+    {
         margin-top: rem(19);
         margin-bottom: rem(28);
 
+        @include text($Ubuntu-medium, $main-black, 20);
     }
-
-    &__text {
-        @include text($Arial, $grey-text, 13, 400);
-        height: rem(60);
-        margin-bottom: rem(25);
+    &__text
+    {
         line-height: rem(20);
+
         overflow: hidden;
 
-    }
+        height: rem(60);
+        margin-bottom: rem(25);
 
-    &__read-next {
-        @include  text($Ubuntu-regular, $main-black, 13);
+        @include text($Arial, $grey-text, 13, 400);
+    }
+    &__read-next
+    {
         padding-right: rem(20);
+
         text-decoration: none;
+
         background: url(../img/arrow.svg) 100% 50% no-repeat;
 
-        &:hover {
+        @include  text($Ubuntu-regular, $main-black, 13);
+        &:hover
+        {
             color: $blue;
         }
     }

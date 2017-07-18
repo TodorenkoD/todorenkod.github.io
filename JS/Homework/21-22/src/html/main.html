@@ -1,0 +1,25 @@
+<main class="main">
+   <article>
+    <script type="text/template" id="test">
+      <h2><%-name%></h2>
+      <ol>
+          <% questions.forEach(function(item) {  %>
+          <li><%=item.text %>
+              <ul class="<%=item.index%>">
+                  <% item.answers.forEach(function(item, i, arr) { %>
+                  <label><input type='checkbox'/><%=item %></label>
+                  <% }); %>
+              </ul>
+          </li>
+          <% }); %>
+      </ol>
+      
+      <div class="buttons">
+          <button class="check">Проверить результ</button>
+          <button class="show">Показать верные ответы</button>
+      </div>
+  </script>  
+  </artile>
+</main>
+
+  

@@ -1,1 +1,1 @@
-"use strict";var c=9,a=2,b=5;
+"use strict";
