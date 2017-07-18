@@ -172,4 +172,6 @@ let testData = {
         }    
 };
 
-module.exports = testData;
+try {
+    module.exports = testData;
+} catch (e) {}
