@@ -38,5 +38,7 @@ https://todorenkod.github.io/
 ### Homework JS 21-22 
 * JS 21-22 [https://todorenkod.github.io/JS/Homework/21-22/dist/](https://todorenkod.github.io/JS/Homework/21-22/dist/)
 
+### Homework JS 23-24 
+* JS 23-24 [https://todorenkod.github.io/JS/Homework/23-24/index.html](https://todorenkod.github.io/JS/Homework/23-24/index.html)
 
 
