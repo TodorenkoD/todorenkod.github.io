@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <script data-main="js/script" src="js/require.js"></script>
+    <title>HomeWork 23-24</title>
+</head>
+
+<body>
+    <script type="text/template" id="wrapper-template">
+        <div class="wrapper">
+            <h1>Список задач</h1>
+            <ul class="item-list"></ul>
+            <div class="controlls">
+                <input type="text" class="new-item-value">
+                <button class="item-add">Добавить пункт</button>
+            </div>
+        </div>
+    </script>
+    <script type="text/template" id="list-template">
+        <% for (var i = 0; i < data.length; i++) { %>
+            <div class="element">
+                <label class="marked">
+                    <input type="checkbox" class="mark">
+                </label>
+                <li>
+                    <%=data[i]%>
+                </li>
+                <div class="buttons">
+                    <button data-value="<%=data[i]%>" class="item-delete">Удалить</button>
+                </div>
+            </div>
+            <% }; %>
+    </script>
+</body>
+
+</html>
