@@ -2,7 +2,8 @@ requirejs.config({
     paths: {
         "jquery": "https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min",
 
-        "lodash": "http://cdn.jsdelivr.net/lodash/4.16.6/lodash"
+        "lodash": "https://cdn.jsdelivr.net/lodash/4.17.4/lodash.min"
+        
     }
 });
 
