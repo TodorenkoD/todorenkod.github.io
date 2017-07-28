@@ -1,13 +1,16 @@
 * {
+    font-family: Tahoma;
+
     margin: 0;
     padding: 0;
-    font-family: Tahoma;
+
     letter-spacing: 1px;
 }
 
 .wrapper {
     width: 90%;
     margin: 30px auto;
+
     background: #ccc;
     -webkit-box-shadow: 1px 1px 8px 1px #525252;
     box-shadow: 1px 1px 8px 1px #525252;
@@ -15,49 +18,62 @@
 
 
 h1 {
-    padding: 5px 15px;
-    color: #000;
     font-weight: 900;
+
+    padding: 5px 15px;
+
+    color: #000;
 }
 
 .item-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    flex-direction: column;
+
+    margin-bottom: 15px;
+    padding: 10px;
+
+    list-style: none;
+
+    color: #fff;
+
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column;
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
     -ms-flex-pack: distribute;
     justify-content: space-around;
-    margin-bottom: 15px;
-    padding: 10px;
-    color: #fff;
-    list-style: none;
 }
 
 .item-list>.element {
+    position: relative;
+
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    position: relative;
+
+    width: 95%;
+    margin-top: 10px;
+
+    border-bottom: 3px solid rgba(255, 255, 255, .3);
+
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    width: 95%;
-    margin-top: 10px;
-    border-bottom: 3px solid rgba(255, 255, 255, .3);
 }
 
 .item-list li {
+    line-height: 24px;
+
+    height: 100%;
+
+    text-align: left;
+
     -ms-flex-preferred-size: 80%;
     flex-basis: 80%;
-    height: 100%;
-    line-height: 24px;
-    text-align: left;
 }
 
 .item-list li:focus {
@@ -68,10 +84,12 @@ h1 {
 
 .marked input {
     position: absolute;
+    z-index: -1;
+
     width: 26px;
     height: 20px;
+
     opacity: 0;
-    z-index: -1;
 }
 
 input {
@@ -79,14 +97,18 @@ input {
 }
 
 label {
-    display: block;
     position: relative;
+
+    display: block;
+
     min-width: 28px;
     height: 20px;
     margin-right: 10px;
+
+    cursor: pointer;
+
     -webkit-box-shadow: 0 0 1px 1px rgba(255, 255, 255, .8);
     box-shadow: 0 0 1px 1px rgba(255, 255, 255, .8);
-    cursor: pointer;
 }
 
 label::before {
@@ -94,30 +116,39 @@ label::before {
 }
 
 .done::before {
-    padding: 0 8px;
-    color: #008000;
     font-family: Arial;
     font-size: 14px;
     font-weight: 900;
     line-height: 20px;
+
+    padding: 0 8px;
+
     content: '\2714';
+
+    color: #008000;
 }
 
 .crossed {
     text-decoration: line-through;
-    opacity: 0.7;
+
+    opacity: .7;
 }
 
 .item-delete {
+    font-size: 14px;
+    font-weight: 900;
+
+    float: left;
+
     margin: 0 10px;
     padding: 5px 15px 10px;
-    float: left;
+
+    cursor: pointer;
+
+    color: #f00;
     border: 0;
     outline: none;
     background: none;
-    color: #ff0000;
-    font-weight: 900;
-    cursor: pointer;
 }
 
 .controlls {
@@ -125,22 +156,41 @@ label::before {
 }
 
 .new-item-value {
+    line-height: 20px;
+
     width: calc(100% - 174px);
     margin-right: 5px;
-    border: 0;
-    background: none;
+
     color: #fff;
-    line-height: 20px;
-    -webkit-box-shadow: 0 0 0 2px rgb(128, 140, 144);
-    box-shadow: 0 0 0 2px rgb(128, 140, 144);
+    border: 2px solid rgb(128, 140, 144);
+    background: none;
 }
 
 .item-add {
+    line-height: 20px;
+
     padding: 3px 15px;
+
+    cursor: pointer;
+    letter-spacing: 2px;
+
+    color: #fff;
     border: 0;
     background: #343442;
-    color: #fff;
-    letter-spacing: 2px;
-    line-height: 20px;
-    cursor: pointer;
+}
+
+.item-add:active {
+    background: #454558
+}
+
+
+@media all and (max-width:450px) {
+    .new-item-value {
+        width: 95%;
+        margin-bottom: 15px;
+    }
+    .item-add {
+        display: block;
+        margin: 0 auto;
+    }
 }
