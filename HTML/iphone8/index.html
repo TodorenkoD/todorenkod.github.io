@@ -9,6 +9,8 @@
     <meta name="description" content="IPhone 8, IPhone 8 Plus, IPhone X" />
     <link href="style.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
 </head>
 
 <body>
@@ -22,13 +24,15 @@
             <section class="phones">
                 <div class="row">
                     <div class="col">
-                        <div class="phone">
+                        <div id="IPhone8" class="phone">
                         	<div class="title">IPhone 8</div>
                             <div class="img">
-                                <img src="images/iPhone_8_grey.png" alt="">
+                                <img class="current" src="images/iPhone_8_grey.png" alt="" data-color="silver">
+								<img src="images/iPhone_8_black.png" alt="" data-color="black">
+								<img src="images/iPhone_8_gold.png" alt="" data-color="gold">
                             </div>
                             <div class="color">
-                                <span class="silver active"></span>
+                                <span class="silver active" data-ref="http://www.foxtrot.com.ua/ru/shop/mobilnye_telefony_apple_iphone-8-256gb-space-gray.html"></span>
                                 <span class="black"></span>
                                 <span class="gold"></span>
                             </div>
@@ -36,10 +40,12 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="phone">
+                        <div id="IPhone8Plus" class="phone">
                         	<div class="title">IPhone 8 Plus</div>
                             <div class="img">
-                                <img src="images/8plus_gold.png" alt="">
+							    <img src="images/iPhone_8plus.png" alt="" data-color="silver">
+								<img src="images/8plus_black.png" alt="" data-color="black">
+                                <img class="current" src="images/8plus_gold.png" alt="" data-color="gold">
                             </div>
                             <div class="color">
                                 <span class="silver"></span>
@@ -50,10 +56,11 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="phone">
+                        <div id="IPhoneX" class="phone">
                         	<div class="title">IPhone X</div>
                             <div class="img">
-                                <img src="images/iPhone_X_black.png" alt="">
+                                <img class="current" src="images/iPhone_X_black.png" alt="" data-color="black">
+								<img src="images/iPhone_X_grey.png" alt="" data-color="silver">
                             </div>
                             <div class="color">
                                 <span class="silver"></span>
@@ -190,5 +197,7 @@
         </footer>
     </div>
 </body>
+
+<script src="script.js"></script>
 
 </html>

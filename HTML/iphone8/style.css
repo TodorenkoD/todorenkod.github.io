@@ -91,12 +91,12 @@ main {
     margin-bottom: 30px;
     padding-bottom: 20px;
 
-    text-align: left;
+    text-align: center;
 
     border-bottom: 1px solid #ccc;
 }
 
-.phone .title:after {
+/*.phone .title:after {
     position: relative;
     top: 10px;
 
@@ -109,7 +109,7 @@ main {
     content: '';
 
     background: url(images/strl.png) 0 0 no-repeat;
-}
+}*/
 
 .phone .img {
     position: relative;
@@ -268,3 +268,10 @@ a.preorder-link:hover {
 
     color: #000;
 }
+
+.img img{
+		display:none;
+		}
+		.current{
+		display:block!important;
+		}
