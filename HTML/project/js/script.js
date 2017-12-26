@@ -1,4 +1,4 @@
-	$(function () {
+$(function () {
             $('.bxslider').bxSlider({
                 auto: true,
 				adaptiveHeight: true,
@@ -26,4 +26,3 @@
 		$(this).closest('label').removeClass('checked');
 	  }
 	});
-
