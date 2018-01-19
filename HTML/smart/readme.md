@@ -1,0 +1,1 @@
+todorenkod.github.io/HTML/smart/index.html
