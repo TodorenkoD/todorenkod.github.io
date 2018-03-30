@@ -18,14 +18,29 @@
 <body>
     <!-- wrapper -->
     <div class="wrapper">
-        <!-- Header -->
-        <header class="header">
-            <!-- logo -->
+        <!-- main -->
+        <main class="main">
+            <!-- aside -->
+            <aside class="aside">
+                 <!-- logo -->
             <div class="logo">
                 <a href="/"><img src="images/logo.png"></a>
             </div>
+            <div class="clearfix"></div>
             <!-- end logo -->
-            <div class="controlers">
+                <nav>
+                    <ul>
+                        <li><a href="#" class="items"><span>View All Rules</span></a></li>
+                        <li class="active"><a href="#" class="items"><span>Rule Builder</span></a></li>
+                        <li><a href="#" class="items"><span>Reporting</span></a></li>
+                        <li class="settings"><a href="#" class="items"><i class="fa fa-cog"></i><span>Settings</span></a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <!-- end aside -->
+            <!-- content -->
+             <div class="controlers-block">
+                <div class="controlers">
                 <div class="left">
                     <h3>View All Rules</h3>
                 </div>
@@ -41,23 +56,7 @@
                     <button type="button" class="btn btn-primary blue">CREATE A RULE</button>
                 </div>
             </div>
-        </header>
-        <!-- end header -->
-        <!-- main -->
-        <main class="main">
-            <!-- aside -->
-            <aside class="aside">
-                <nav>
-                    <ul>
-                        <li class="active"><a href="#" class="items"><span>View All Rules</span></a></li>
-                        <li><a href="#" class="items"><span>Rule Builder</span></a></li>
-                        <li><a href="#" class="items"><span>Reporting</span></a></li>
-                        <li class="settings"><a href="#" class="items"><i class="fa fa-cog"></i><span>Settings</span></a></li>
-                    </ul>
-                </nav>
-            </aside>
-            <!-- end aside -->
-            <!-- content -->
+            </div>
             <div class="container">
                 <div class="rules">
                     <div class="row filters-block">
@@ -264,7 +263,6 @@
         </main>
         <!-- end main -->
     </div>
-    <!--     //= html/footer.html -->
     <!-- end wrapper -->
 </body>
 <!-- jQuery library -->
