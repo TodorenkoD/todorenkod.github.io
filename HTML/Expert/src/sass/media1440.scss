@@ -31,7 +31,8 @@
                 border-bottom: 1px solid #ccc;
             }
             &__item {
-                flex-basis: 50%;
+                -ms-flex-preferred-size: 50%;
+                    flex-basis: 50%;
             }
         }
         .cards {
@@ -41,8 +42,11 @@
             }
 
             &__item {
-                flex-basis: 50%;
+                -ms-flex-preferred-size: 50%;
+                    flex-basis: 50%;
                 .icon {
+                    display: -webkit-box;
+                    display: -ms-flexbox;
                     display: flex;
                 }
             }

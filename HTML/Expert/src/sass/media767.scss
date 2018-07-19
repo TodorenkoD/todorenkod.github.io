@@ -10,6 +10,8 @@
             &__list {
                 display: none;
                 &.mobile {
+                    display: -webkit-box!important;
+                    display: -ms-flexbox!important;
                     display: flex!important;
                     margin-left: 5px;
                     margin-bottom: 10px;
@@ -30,7 +32,8 @@
 
         .products {
             &__item {
-                flex-basis: 100%!important;
+                -ms-flex-preferred-size: 100%!important;
+                    flex-basis: 100%!important;
             }
             &__description {
                 display: none;
@@ -51,9 +54,9 @@
 
         .company {
             &__item {
-            	&:hover{
-            		background:transparent;
-            	}
+                &:hover{
+                    background:transparent;
+                }
                 .icon {
                     display: none!important;
                 }

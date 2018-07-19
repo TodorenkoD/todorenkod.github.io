@@ -16,6 +16,8 @@
     .company {
         &__item {
             .icon {
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
             }
         }
