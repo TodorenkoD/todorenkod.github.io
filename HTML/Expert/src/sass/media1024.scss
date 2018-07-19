@@ -1,0 +1,23 @@
+// MEDIA 1024px
+@media screen and (max-width: 1024px) {
+    .header {
+        &__content {
+            width: 720px!important;
+            .nav {
+                display: none;
+            }
+            .open__modal {
+                display: block;
+            }
+        }
+    }
+
+
+    .company {
+        &__item {
+            .icon {
+                display: flex;
+            }
+        }
+    }
+}

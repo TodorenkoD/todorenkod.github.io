@@ -1,0 +1,62 @@
+    // MEDIA 767px
+    @media screen and (max-width: 767px) {
+        .header {
+            &__content {
+                width: 90%!important;
+                height: 65px;
+            }
+        }
+        .login {
+            &__list {
+                display: none;
+                &.mobile {
+                    display: flex!important;
+                    margin-left: 15px;
+                    margin-bottom: 10px;
+                }
+            }
+
+            &__link {
+                &--login {
+                    color: #0091d9!important;
+                    border: 1px solid #0091d9!important;
+                }
+                &--registration {
+                    color: #fff;
+                }
+            }
+        }
+
+
+        .products {
+            &__item {
+                flex-basis: 100%!important;
+            }
+            &__description {
+                display: none;
+            }
+        }
+
+        .cards {
+            &__list {
+                border-bottom: 1px solid #ccc;
+            }
+
+            &__item {
+                .icon {
+                    display: none!important;
+                }
+            }
+        }
+
+        .company {
+            &__item {
+            	&:hover{
+            		background:transparent;
+            	}
+                .icon {
+                    display: none!important;
+                }
+            }
+        }
+    }
