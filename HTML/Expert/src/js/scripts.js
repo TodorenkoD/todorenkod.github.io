@@ -1,11 +1,11 @@
-// Dropdown Menu Fade    
-$(document).ready(function(){
-    $(".nav__item").hover(
-        function() { $('.submenu', this).fadeIn();
-        },
-        function() { $('.submenu', this).fadeOut();
-    });
-});
+// // Dropdown Menu Fade    
+// $(document).ready(function(){
+//     $(".nav__item").hover(
+//         function() { $('.submenu', this).fadeIn();
+//         },
+//         function() { $('.submenu', this).fadeOut();
+//     });
+// });
 
 
 //Modal
