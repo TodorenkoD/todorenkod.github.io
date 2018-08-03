@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="images/favicon.png?" type="image/png">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- fonts  -->
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
+    <!-- Load icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Rules - Offer</title>
+</head>
+
+<body>
+    <!-- wrapper -->
+    <div class="wrapper">
+        <!-- main -->
+        <main class="main">
+            <!-- aside -->
+            <aside class="aside">
+                <!-- logo -->
+                <div class="logo">
+                    <a href="/"><img src="images/logo.png"></a>
+                </div>
+                <div class="clearfix"></div>
+                <!-- end logo -->
+                <!-- nav- -->
+                <nav>
+                    <ul>
+                        <li><a href="#" class="items"><span>View All Rules</span></a></li>
+                        <li><a href="#" class="items"><span>Rule Builder</span></a></li>
+                        <li class="active"><a href="#" class="items"><span>Offer Builder</span></a></li>
+                        <li><a href="#" class="items"><span>Reporting</span></a></li>
+                        <li class="settings"><a href="#" class="items"><i class="fa fa-cog"></i><span>Settings</span></a></li>
+                    </ul>
+                </nav>
+                <!-- end nav -->
+            </aside>
+            <!-- end aside -->
+            <!-- content -->
+            <div class="controlers-block">
+                <div class="controlers">
+                    <div class="left">
+                        <h3>Offer Builder</h3>
+                    </div>
+                    <div class="right">
+                        <button type="button" class="btn btn-primary btn-inactive"><span></span>INACTIVE</button>
+                        <button type="button" class="btn btn-primary btn-active"><span></span>ACTIVE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="step">
+                    <button class="accordion"><span class="number">1</span>General Information</button>
+                    <div class="panel">
+                        <div class="content">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="name">NAME</label>
+                                        <input type="name" class="form-control" id="name" placeholder="Name the rule" name="name">
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="">VALID FROM</label>
+                                                <input type="" class="form-control date" id="" placeholder="Starting Date" name="">
+                                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="">VALID TO</label>
+                                                <input type="" class="form-control date" id="" placeholder="Starting Date" name="">
+                                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="sel">STATUS</label>
+                                                <div class="select">
+                                                    <div class="custom-select">
+                                                        <select>
+                                                            <option value="0">Select rule status</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="">PRORITY</label>
+                                                <input type="" class="form-control" id="" placeholder="Enter priority level 1-10" name="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label for="sel">BASED ON</label>
+                                                <div class="select">
+                                                    <div class="custom-select">
+                                                        <select>
+                                                            <option value="0">Rule will be based on</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label for="">DESCRIPTION</label>
+                                                <textarea class="form-control" rows="5" placeholder="Brief description of the rule"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <button type="button" class="btn btn-primary btn-lg blue">SAVE & CONTINUE</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="step">
+                    <button class="accordion"><span class="number">2</span>Template Information</button>
+                    <div class="panel">
+                        <div class="content">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label for="text">Template code</label>
+                                                <input type="text" class="form-control" id="name" placeholder="OFFER-001" name="name">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="sel">NUMBER GENERATION</label>
+                                        <div class="select">
+                                            <div class="custom-select">
+                                                <select>
+                                                    <option value="0">Dynamic</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="">STATIC NUMBER</label>
+                                        <input type="" class="form-control" id="" placeholder="Enter priority level 1-10" name="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label for="text">PREFIX</label>
+                                                <input type="text" class="form-control" id="name" placeholder="OF" name="name">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="text">STEP</label>
+                                                        <input type="text" class="form-control" id="name" placeholder="1" name="name">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="form-group">
+                                                        <label for="text">NUMBER</label>
+                                                        <input type="text" class="form-control" id="name" placeholder="000001" name="name">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label for="text">SUFFIX</label>
+                                                <input type="text" class="form-control" id="name" placeholder="-DEFACTO" name="name">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label for="text">CURRENT NUMBER</label>
+                                                <input type="text" class="form-control" id="name" placeholder="OF-000001-DEFACTO" name="name" style="background: #f2f2f2;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="sel">VALUE TYPE</label>
+                                        <div class="select">
+                                            <div class="custom-select">
+                                                <select>
+                                                    <option value="0">Money</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="text">VALUE</label>
+                                                <input type="text" class="form-control" id="name" placeholder="10.000" name="name">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="sel">CURRENCY</label>
+                                                <div class="select">
+                                                    <div class="custom-select">
+                                                        <select>
+                                                            <option value="0">EUR</option>
+                                                            <option value="1">UAH</option>
+                                                            <option value="2">USD</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="sel">VAILD FROM</label>
+                                        <div class="select">
+                                            <div class="custom-select">
+                                                <select>
+                                                    <option value="0">Created On</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="sel">VALID TO</label>
+                                                <div class="select">
+                                                    <div class="custom-select">
+                                                        <select>
+                                                            <option value="0">Created On - Custom</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 nopadding">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="text">&nbsp;</label>
+                                            <input type="text" class="form-control" id="name" placeholder="31" name="name">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="text">&nbsp;</label>
+                                            <input type="text" class="form-control" id="name" placeholder="12" name="name">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="text">&nbsp;</label>
+                                            <input type="text" class="form-control" id="name" placeholder="YYYY" name="name">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-9"></div>
+                                <div class="col-md-3">
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <div class="form-group">
+                                                <button class="form-btn-plus">+</button>
+                                                <input type="text" class="form-control center" id="name" placeholder="1" name="name">
+                                                <div class="form-btns">
+                                                    <a href="#up" class="up"></a>
+                                                    <a href="#down" class="down"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="form-group">
+                                                <div class="select">
+                                                    <div class="custom-select">
+                                                        <select>
+                                                            <option value="0">Year(s)</option>
+                                                            <option value="1">2017</option>
+                                                            <option value="2">2016</option>
+                                                            <option value="3">2015</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="checkbox-container">
+                                        <label class="checkbox"> GENERATE ON THE FLY (If not SELECTED, A JOB IS REQUIRED TO PRE-GENERATE THOSE OFFERS)
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <button type="button" class="btn btn-primary btn-lg blue">SAVE &amp; CONTINUE</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="step">
+                    <button class="accordion"><span class="number">3</span>Add Actions</button>
+                    <div class="panel">
+                        <div class="content">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="sel">ACTION</label>
+                                        <div class="select">
+                                            <div class="custom-select">
+                                                <select>
+                                                    <option value="0">Select the sction for this ruleSelect rule status</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <button type="button" class="btn btn-primary grey right mr0">ADD ACTION</button>
+                                </div>
+                            </div>
+                            <!-- первое условие -->
+                            <div class="row addpoints">
+                                <div class="title">Add Points</div>
+                                <div class="col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-12 checkbox-container">
+                                            <label class="checkbox">Standard Points
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="checkbox">Extra Points
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="row values">
+                                        <div class="col-md-12">
+                                            <label for="" class="left">VALUE TYPE:</label>
+                                            <div class="col-md-4 checkbox-container">
+                                                <label class="checkbox">Fixed Value
+                                                    <input type="checkbox" checked="checked">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="checkbox">Factor
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <label for="" class="left">VALUE:</label>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <input type="" class="form-control" id="" placeholder="Amount of Extra Points to Add">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label for="" class="left">Based on Standard Points</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <button type="button" class="btn btn-primary grey right mr0">SAVE</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- конец первого условия -->
+                            <!-- второе условие -->
+                            <div class="row addpoints">
+                                <div class="title">Add Points</div>
+                                <div class="col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-12 checkbox-container">
+                                            <label class="checkbox">Standard Points
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="checkbox">Extra Points
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="row values">
+                                        <div class="col-md-12">
+                                            <label for="" class="left">VALUE TYPE:</label>
+                                            <div class="col-md-4 checkbox-container">
+                                                <label class="checkbox">Fixed Value
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="checkbox">Factor
+                                                    <input type="checkbox" checked="checked">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <label for="" class="left">VALUE:</label>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <input type="" class="form-control" id="" placeholder="# of Points">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <label for="" class="left"></label>
+                                            <div class="col-md-4">
+                                                <label for="" class="left">BASED ON TRANSACTION, MULTIPLY VALUE BY:</label>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <div class="select">
+                                                        <div class="custom-select">
+                                                            <select>
+                                                                <option value="0">Select rule Factor</option>
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <button type="button" class="btn btn-primary grey right mr0">SAVE</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- конец второго условия -->
+                            <!-- третье условие -->
+                            <div class="row addpoints">
+                                <div class="title">Add Points</div>
+                                <div class="col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-12 checkbox-container">
+                                            <label class="checkbox">Standard Points
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="checkbox">Extra Points
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="row values">
+                                        <div class="col-md-12">
+                                            <label for="" class="left">VALUE TYPE:</label>
+                                            <div class="col-md-4 checkbox-container">
+                                                <label class="checkbox">Fixed Value
+                                                    <input type="checkbox" checked="checked">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="checkbox">Factor
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <label for="" class="left">VALUE:</label>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <input type="" class="form-control" id="" placeholder="# of Points">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <button type="button" class="btn btn-primary grey right mr0">SAVE</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- конец третьего условия -->
+                            <!-- четвертое  условие -->
+                            <div class="row addpoints">
+                                <div class="title">Add Points <a href="#" class="delete"><span>-</span></a></div>
+                                <div class="col-md-12">
+                                    <label for="" class="primary">Standard Points, Fixed Value: 1</label>
+                                    <a href="#" class="rewrite"><i class="fa fa-pencil"></i></a>
+                                </div>
+                            </div>
+                            <div class="row addpoints">
+                                <div class="title">Add Points <a href="#" class="delete"><span>-</span></a></div>
+                                <div class="col-md-12">
+                                    <label for="" class="primary">Standard Points, Factor: 1 x 10</label>
+                                    <a href="#" class="rewrite"><i class="fa fa-pencil"></i></a>
+                                </div>
+                            </div>
+                            <div class="row addpoints">
+                                <div class="title">Add Points <a href="#" class="delete"><span>-</span></a></div>
+                                <div class="col-md-12">
+                                    <label for="" class="primary">Extra Points, Fixed Value: 3</label>
+                                    <a href="#" class="rewrite"><i class="fa fa-pencil"></i></a>
+                                </div>
+                            </div>
+                            <!-- конец четвертого условия -->
+                            <!-- пятое условие -->
+                            <div class="row addpoints">
+                                <div class="title">Add Points</div>
+                                <div class="col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-12 checkbox-container">
+                                            <label class="checkbox">Standard Points
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="checkbox">Extra Points
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="row values">
+                                        <div class="col-md-12">
+                                            <label for="" class="left">VALUE TYPE:</label>
+                                            <div class="col-md-4 checkbox-container">
+                                                <label class="checkbox">Fixed Value
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="checkbox">Factor
+                                                    <input type="checkbox" checked="checked">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <label for="" class="left">VALUE:</label>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <input type="" class="form-control" id="" placeholder="Factor to Multiply By">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label for="" class="left">Based on Standard Points</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <button type="button" class="btn btn-primary grey right mr0">SAVE</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- конец пятого условия -->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <button type="button" class="btn btn-primary btn-lg blue">SAVE & CONTINUE</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="step">
+                    <button class="accordion"><span class="number">4</span>Summary / Publish</button>
+                    <div class="panel">
+                        <div class="content">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p>GENERAL INFOMATION</p>
+                                    <dl class="dl-horizontal">
+                                        <dt>Name:</dt>
+                                        <dd><b>Spend More, Save More</b></dd>
+                                        <dt>Valid From:</dt>
+                                        <dd>2, 2018 - Feb 6, 2018</dd>
+                                        <dt>Status:</dt>
+                                        <dd>Inactive</dd>
+                                        <dt>Priority:</dt>
+                                        <dd>2</dd>
+                                        <dt>Based on:</dt>
+                                        <dd>Transaction</dd>
+                                        <dt>Description:</dt>
+                                        <dd>When you spend $50+, Save 15%, When you
+                                    </dl>
+                                    <p>RULES:</p>
+                                    <dl class="dl-horizontal">
+                                        <dt><b>WHEN</b></dt>
+                                        <dd></dd>
+                                        <dt></dt>
+                                        <dd>attribute1 = 100USD</dd>
+                                        <dt><b>AND</b></dt>
+                                        <dd></dd>
+                                        <dt></dt>
+                                        <dd>attribute2 = "angelo"</dd>
+                                        <dd><b>OR</b></dd>
+                                        <dd>attribute3 = "helen"</dd>
+                                        <dt><b>THEN</b></dt>
+                                        <dd></dd>
+                                        <dt>Create a Voucher</dt>
+                                        <dd></dd>
+                                    </dl>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <button type="button" class="btn btn-primary grey">SAVE AS DRAFT</button>
+                                            <div class="clearfix"></div>
+                                            <button type="button" class="btn btn-primary btn-lg blue" style="margin-top: 20px;">ACTIVATE</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <!-- end content -->
+                </div>
+        </main>
+        <!-- end main
+    </div>
+    <!-- end wrapper -->
+</body>
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/script.js "></script>
+
+</html>
