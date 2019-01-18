@@ -22,9 +22,8 @@
             border: 1px solid #ccc;
             border-left: none;
             color: #8C8C8C;
-            display:-webkit-box;
-            display:-ms-flexbox;
-            display:flex;
+           display: block;
+    line-height: 15px;
 
             &:before {
                 display: inline-block;
