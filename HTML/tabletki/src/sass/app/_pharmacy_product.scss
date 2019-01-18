@@ -1,0 +1,112 @@
+.pharmacy__product {
+    .shadow {
+        box-shadow: 0 0 0.5rem 0.1rem rgba(0, 0, 0, .15) !important;
+    }
+
+
+    .products-price {
+        &__list {}
+
+        &__item {
+
+.list-group{
+    border-radius:5px;
+}
+            .list-group-item {
+
+                &:first-child {
+                    border-color: #dedede;
+                }
+
+                    &:last-child {
+                       border-color: #dedede;
+                    }
+                }
+
+                .title {
+                    color: $black;
+                    font-family: Rubik;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 20px;
+
+                    span {
+                        color: $grey !important;
+                        font-weight: 400 !important;
+                        line-height: 20px !important;
+                    }
+                }
+
+                .price {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    font-size: 14px;
+                    line-height: 20px;
+
+                    span {
+                        font-family: Rubik;
+                        font-size: 14px;
+                        font-weight: normal;
+                        line-height: 16px;
+                    }
+
+                    &--base {
+                        color: $light-grey;
+                    }
+
+                    &--reserve {
+                        color: $green;
+                        font-weight: 700 !important;
+
+                    }
+
+                    &--econom {
+                        color: $red;
+                    }
+                }
+            }
+        }
+
+        .card {
+            &-header {
+                background: $white;
+            }
+
+            &-title {
+                font-family: Rubik;
+                font-size: 16px;
+                color: #008739;
+                font-weight: 400;
+                line-height: 24px;
+            }
+
+            .back {
+                font-family: Rubik;
+                font-size: 16px;
+                line-height: 24px;
+                color: $green;
+
+
+                &:before {
+                    display: inline-block;
+                    content: "";
+                    width: 10px;
+                    height: 10px;
+                    margin-right: 10px;
+                    background: url(../images/icons/icon--arrow-left.png) 0 0 no-repeat;
+
+                }
+            }
+
+            .search {
+                &__content {
+                    border-radius: 0 0 5px 5px;
+                }
+
+                &:after {
+                    border-bottom: none !important;
+                }
+            }
+        }
+    }

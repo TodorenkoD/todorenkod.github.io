@@ -1,0 +1,45 @@
+.navigation__block {
+    color: $green;
+    font-family: Rubik;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+
+    a {
+        color: $green;
+
+        &:hover {
+            color: $green;
+            text-decoration: none;
+        }
+    }
+
+    .icon {
+        position: relative;
+        top: 4px;
+
+        &--nav_arrow {
+            &:before {
+                display: inline-block;
+
+                content: '';
+                width: 21px;
+                height: 21px;
+
+                background: url(../images/icons/icon--nav_arrow.png) 0 0 no-repeat;
+            }
+        }
+
+        &--gps {
+            &:before {
+                display: inline-block;
+
+                content: '';
+                width: 20px;
+                height: 20px;
+
+                background: url(../images/icons/icon--gps.png) 0 0 no-repeat;
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.pharmacy__block {
+    .shadow {
+                box-shadow: 0 0 .5rem 0.1rem rgba(0, 0, 0, .15) !important;
+            }
+
+    .card {
+        &-header {
+            background: $white;
+        }
+
+        &-title {
+            color: $black;
+            font-size: 18px;
+        }
+
+        .all_pharmacy {
+            a {
+                color: $green;
+            }
+        }
+    }
+
+}
