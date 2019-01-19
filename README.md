@@ -1,7 +1,7 @@
 https://todorenkod.github.io/
 
 
-# Homework JS:
+<!-- # Homework JS:
 
 ### Homework JS 1-2: 
 * JS 1 [https://todorenkod.github.io/JS/Homework/01-02/index.html](https://todorenkod.github.io/JS/Homework/01-02/index.html)
@@ -42,3 +42,4 @@ https://todorenkod.github.io/
 * JS 23-24 [https://todorenkod.github.io/JS/Homework/23-24/index.html](https://todorenkod.github.io/JS/Homework/23-24/index.html)
 
 
+ -->
