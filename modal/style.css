@@ -50,7 +50,7 @@ body {
     bottom: 20px;
     right: 20px;
     border-radius: 4px;
-    min-width: 300px;
+    max-width: 300px;
     box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     -webkit-animation-name: slideIn;
     -webkit-animation-duration: 0.4s;
