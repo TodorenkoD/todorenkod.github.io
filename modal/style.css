@@ -34,8 +34,8 @@ body {
     width: 70px;
     height: 70px;
     position: fixed;
-    bottom: 30px;
-    right: 30px;
+    bottom: 10px;
+    right: 10px;
     z-index: 999;
     border: none;
     border-radius: 50%;
@@ -48,7 +48,7 @@ body {
     position: fixed;
     background-color: #fefefe;
     bottom: 20px;
-    right: 20px;
+    right: 10px;
     border-radius: 4px;
     max-width: 300px;
     box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -131,8 +131,10 @@ body {
 }
 
 .modal-body {
-    padding:16px;
+    padding: 16px;
     background: #e9eef4;
+    overflow: scroll;
+    height: 300px;
 }
 
 .modal-footer {
@@ -166,35 +168,34 @@ button {
 
 
 .msg {
-  border: 2px solid #dedede;
-  background-color: #f1f1f1;
-  border-radius: 5px;
-  padding: 10px;
-  margin: 10px 0;
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
 }
 
 .darker {
-  border-color: #ccc;
-  background-color: #ddd;
+    border-color: #ccc;
+    background-color: #ddd;
 }
 
 .msg::after {
-  content: "";
-  clear: both;
-  display: table;
+    content: "";
+    clear: both;
+    display: table;
 }
 
 .msg img {
-  float: left;
-  max-width: 60px;
-  width: 100%;
-  margin-right: 20px;
-  border-radius: 50%;
+    float: left;
+    max-width: 60px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
 }
 
 .msg img.right {
-  float: right;
-  margin-left: 20px;
-  margin-right:0;
+    float: right;
+    margin-left: 20px;
+    margin-right: 0;
 }
-
