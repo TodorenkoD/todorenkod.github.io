@@ -131,7 +131,7 @@ body {
 }
 
 .modal-body {
-    padding: 16px;
+    padding: 10px;
     background: #e9eef4;
     overflow-y: scroll;
     height: 300px;
@@ -142,9 +142,16 @@ body {
     color: black;
     background: #e9eef4;
     border-radius: 0 0 5px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.modal-footer button {
+.modal-footer input {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    display: block;
+    padding: 10px 5px;
     width: 75%;
 }
 
