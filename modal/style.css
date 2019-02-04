@@ -229,4 +229,7 @@ button {
     .modal-body {
             height: calc(100% - 115px);
     }
+    .modal-footer button{
+        width:20%;
+    }
 }
