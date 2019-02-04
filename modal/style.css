@@ -206,3 +206,27 @@ button {
     margin-left: 20px;
     margin-right: 0;
 }
+
+
+
+@media screen and (max-width: 767px) {
+    .modal {
+        padding: 0;
+    }
+
+    .modal-content {
+        max-width: 100% !important;
+        height: 100%;
+
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+
+    .modal-body {
+            height: calc(100% - 115px);
+    }
+}
