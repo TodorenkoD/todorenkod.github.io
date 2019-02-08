@@ -30,7 +30,7 @@ body {
 }
 
 .open-modal {
-    background: url(bot.png) 0 0 no-repeat;
+    background: url(images/bot.png) 0 0 no-repeat;
     width: 70px;
     height: 70px;
     position: fixed;
