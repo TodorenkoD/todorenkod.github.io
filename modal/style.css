@@ -194,11 +194,19 @@ button {
 }
 
 .msg img {
-    float: left;
-    max-width: 60px;
-    width: 100%;
-    margin-right: 20px;
+    float: left; 
+    width: 100%; 
+}
+
+.msg img.avatar {
     border-radius: 50%;
+    max-width: 60px;
+    margin-right: 20px;
+}
+.msg img.wallet {
+    width: 110px;
+    height: 34px;
+    padding: 5px 0;
 }
 
 .msg img.right {
@@ -227,9 +235,10 @@ button {
     }
 
     .modal-body {
-            height: calc(100% - 115px);
+        height: calc(100% - 115px);
     }
-    .modal-footer button{
-        width:20%;
+
+    .modal-footer button {
+        width: 20%;
     }
 }
